@@ -1,0 +1,37 @@
+/*
+ * @branding
+ */
+.branding { background: url('/img/mocarny.jpg') 50% 50% no-repeat; background-size: cover; overflow: hidden; }
+.branding--hidden { display: none; }
+
+.header { padding: 48px 16px; }
+.header__name { color: rgba(255, 255, 255, .9); margin: 0 0 16px; font-size: 16px; text-shadow: 0 1px 1px #333; }
+.header__heading { margin: 0 0 16px; font-size: 42px; line-height: 1; color: rgba(255,255,255,.9); text-shadow: 0 1px 1px #333; }
+.header__quote { color: rgba(255, 255, 255, .9); margin: 0 -16px 16px; font-style: italic; font-size: 16px;
+	/* background: rgba(0,0,0,.25);  */
+	padding: 16px; text-shadow: 0 1px 1px #333;
+}
+.header__quote small { text-transform: uppercase; font-style: normal; font-size: 10px; }
+.header__list { color: #B1B2B4; font-size: 14px; text-shadow: 0 1px 1px #000; }
+.header__list li { display: inline-block; }
+.header__list li:nth-child(1) { display: block; }
+
+@media (min-width: 768px) {
+	.header { padding: 16px; }
+	.branding { background: url('/img/mocarny.jpg') 50% 50% no-repeat; background-size: cover; overflow: hidden; height: 700px; }
+	.branding--hidden { display: none; }
+	.branding__content { position: relative; width: 100%; max-width: 1400px; padding: 1em; margin: 0 auto; height: 700px; }
+
+	.header { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%);  /*line-height: 1.45; */ padding: 0; }
+	.header__name { font-size: 21px; margin: 24px 0 8px; }
+	.header__heading { font-size: 56px; line-height: auto; }
+	.header__quote { font-size: 21px; margin: 0 0 16px; padding: 24px 0; }
+	.header__quote small { font-size: 12px; position: relative; top: -2px; }
+	.header__list { font-size: 16px; }
+	.header__list li:nth-child(1) { display: inline-block; }
+}
+
+@media (min-width: 1600px) {
+	.branding { background-position: 50% 50%; }
+}
+/* end of branding */

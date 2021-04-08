@@ -1,0 +1,5 @@
+.tabs { margin: 1.5em 0; text-align: center; }
+.tabs__item { display: inline-block; }
+.tabs__item a { border-radius: 4px; padding: .5em; display: inline-block; }
+.link:hover,
+.active  { background: rgba(0, 0, 0, .25); }

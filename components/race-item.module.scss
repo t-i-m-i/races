@@ -1,0 +1,22 @@
+.race-info {
+  display: inline-block;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.info {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 5px;
+}
+
+tr.zapłacony .race-info {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+tr.cancelled .race-info {
+  background: #ff6961;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
