@@ -7,14 +7,33 @@ export default function RaceItem({ race }) {
     return score.toFixed()
   }
 
+  const editedInfo = () => {
+    const info = race.info.replace('zapłacony', '').replace('anulowane', '');
+    return info;
+  }
+
   return (
     <>
-      <tr className={styles[race.info]}>
+      <tr>
         <td>{race.date}</td>
         <td>
           {race.name}
           {race.info && <br />}
-          <small className={styles['race-info']}>{race.info}</small>
+          <small className={styles['race-info']}>
+            {race.info.includes('zapłacony') && (
+              <span className={`${styles['status']} ${styles['status--paid']}`}>
+                zapłacony
+              </span>
+            )}
+            {race.info.includes('anulowane') && (
+              <span
+                className={`${styles['status']} ${styles['status--cancelled']}`}
+              >
+                anulowane
+              </span>
+            )}
+            {editedInfo()}
+          </small>
         </td>
         <td>
           {race.distance} {race.distance && 'km'}
