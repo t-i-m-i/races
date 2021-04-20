@@ -1,7 +1,7 @@
 /*
  * @branding
  */
-.branding { background: url('/cv/img/mocarny.jpg') 50% 50% no-repeat; background-size: cover; overflow: hidden; }
+.branding { background: url('/img/mocarny.jpg') 50% 50% no-repeat; background-size: cover; overflow: hidden; }
 .branding--hidden { display: none; }
 
 .header { padding: 48px 16px; }
@@ -18,7 +18,7 @@
 
 @media (min-width: 768px) {
 	.header { padding: 16px; }
-	.branding { background: url('/cv/img/mocarny.jpg') 50% 50% no-repeat; background-size: cover; overflow: hidden; height: 700px; }
+	.branding { background: url('/img/mocarny.jpg') 50% 50% no-repeat; background-size: cover; overflow: hidden; height: 700px; }
 	.branding--hidden { display: none; }
 	.branding__content { position: relative; width: 100%; max-width: 1400px; padding: 1em; margin: 0 auto; height: 700px; }
 

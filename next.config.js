@@ -1,5 +1,5 @@
 module.exports = {
-  basePath: '/cv',
-//   assetsPrefix: '/cv/',
-  trailingSlash: true,
+  // basePath: '/cv',
+  // assetsPrefix: '/cv/',
+  // trailingSlash: true,
 }
