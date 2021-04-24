@@ -41,6 +41,7 @@ export async function getStaticProps() {
     props: {
       racesData,
       seasons
-    }
+    },
+    revalidate: 60,
   }
 }
