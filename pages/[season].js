@@ -13,6 +13,7 @@ export default function Races({ racesData, seasons }) {
       <Head>
         <title>Races season {season}</title>
       </Head>
+      {/* todo: make component */}
       <div className="g--table-container">
         <table className="table">
           <thead>

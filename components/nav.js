@@ -6,8 +6,8 @@ export default function Nav({ seasons, activeSeason }) {
 
   const [activeTab, setActiveTab] = useState(activeSeason)
 
-  const isActiveTab = (season) => {
-    return activeTab === season ? 'active' : 'link'
+  const isActiveTab = season => {
+    return activeTab.toString() === season ? 'active' : 'link'
   }
 
   return (
