@@ -1,7 +1,7 @@
 import { getSeasonsPaths, getSeasons, getRaces } from '../lib/races'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import Layout from '../components/layout'
+import Layout from '../layouts/layout'
 import RaceItem from '../components/race-item'
 
 export default function Races({ racesData, seasons }) {
