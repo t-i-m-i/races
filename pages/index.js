@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Layout from '../components/layout'
+import Layout from '../layouts/layout'
 import { getSeasons, getRaces } from '../lib/races'
 import RaceItem from '../components/race-item'
 

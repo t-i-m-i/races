@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import Header from './header'
-import Nav from './nav'
-import styles from './layout.module.scss'
+import Header from '../components/header'
+import Nav from '../components/nav'
 
 export default function Layout({ children, seasons, activeSeason }) {
   return (
@@ -16,8 +15,16 @@ export default function Layout({ children, seasons, activeSeason }) {
       </Head>
       <Header />
       <Nav seasons={seasons} activeSeason={activeSeason} />
-      <main className={styles.main}>{children}</main>
+      <main className="main">{children}</main>
       <footer></footer>
+      <style jsx>{`
+        main {
+          width: 100%;
+          max-width: 1400px;
+          margin: 0 auto;
+          padding: 0 1em 1em;
+        }
+      `}</style>
     </>
   )
 }

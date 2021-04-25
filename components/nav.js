@@ -3,7 +3,6 @@ import styles from './nav.module.scss'
 import { useState } from 'react'
 
 export default function Nav({ seasons, activeSeason }) {
-
   const [activeTab, setActiveTab] = useState(activeSeason)
 
   const isActiveTab = season => {
@@ -25,6 +24,11 @@ export default function Nav({ seasons, activeSeason }) {
             </Link>
           </li>
         ))}
+        <li className={styles.tabs__item}>
+          <Link href="search">
+            <a className={styles['link']}>Search</a>
+          </Link>
+        </li>
       </ul>
     </nav>
   )
