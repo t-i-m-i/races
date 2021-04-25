@@ -24,10 +24,10 @@ export default function SearchPage({ racesData }) {
         <input
           id="search"
           type="text"
-          autocomplete="off"
-          autocorrect="off"
-          autocapitalize="off"
-          spellcheck="false"
+          autoComplete="off"
+          autoCorrect="off"
+          autoCapitalize="off"
+          spellCheck="false"
           onInput={search}
         />
       </div>
