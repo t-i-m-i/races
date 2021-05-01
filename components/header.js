@@ -2,7 +2,6 @@ import styles from './header.module.scss'
 
 export default function Header({ stats }) {
 
-  // total is a computed property (vue :))
   const total = stats => {
     const sum = Object.values(stats).reduce((a, c) => a + c, 0)
     return sum
@@ -28,7 +27,6 @@ export default function Header({ stats }) {
               <li>Duathlon: {stats.duathlon}</li>
               <li>Marathon+: {stats.marathonPlus}</li>
               <li>Marathon-: {stats.marathonMinus}</li>
-              <li>Run: {stats.run}</li>
               <li>Bike: {stats.bike}</li>
               <li>Total: {total(stats)}</li>
             </ul>
