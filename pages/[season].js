@@ -1,15 +1,15 @@
-import { getSeasonsPaths, getSeasons, getRaces } from '../lib/races'
+import { getSeasonsPaths, getSeasons, getRaces, getStats } from '../lib/races'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import Layout from '../layouts/layout'
 import RaceItem from '../components/race-item'
 
-export default function Races({ racesData, seasons }) {
+export default function Races({ racesData, seasons, stats }) {
   const router = useRouter()
   const { season } = router.query
 
   return (
-    <Layout seasons={seasons} activeSeason={season}>
+    <Layout seasons={seasons} activeSeason={season} stats={stats}>
       <Head>
         <title>Races season {season}</title>
       </Head>
@@ -47,10 +47,12 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const racesData = await getRaces(params.season)
   const seasons = await getSeasons()
+  const stats = await getStats()
   return {
     props: {
       racesData,
-      seasons
+      seasons,
+      stats,
     },
     revalidate: 60,
   }
