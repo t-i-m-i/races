@@ -32,9 +32,3 @@ yarn-error.log*
 
 # vercel
 .vercel
-
-# secret API_KEY
-/lib/config.js
-
-# races database
-/data

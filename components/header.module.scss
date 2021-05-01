@@ -13,7 +13,10 @@
 }
 .header__quote small { text-transform: uppercase; font-style: normal; font-size: 10px; }
 .header__list { color: #B1B2B4; font-size: 14px; text-shadow: 0 1px 1px #000; }
-.header__list li { display: inline-block; }
+.header__list li {
+	display: inline-block;
+	margin-right: 10px;
+}
 .header__list li:nth-child(1) { display: block; }
 
 @media (min-width: 768px) {

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from '../components/header'
 import Nav from '../components/nav'
 
-export default function Layout({ children, seasons, activeSeason }) {
+export default function Layout({ children, seasons, activeSeason, stats }) {
   return (
     <>
       <Head>
@@ -13,7 +13,7 @@ export default function Layout({ children, seasons, activeSeason }) {
           rel="stylesheet"
         ></link>
       </Head>
-      <Header />
+      <Header stats={stats} />
       <Nav seasons={seasons} activeSeason={activeSeason} />
       <main className="main">{children}</main>
       <footer></footer>

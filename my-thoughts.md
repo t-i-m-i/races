@@ -5,3 +5,6 @@
 
 ## Drawbacks of Styled JSX
 - ```Nesting detected at 21:11. Unfortunately nesting is not supported by styled-jsx.```
+
+## getStaticProps()
+- ```revalidate: 60,``` powoduje, ze na localu (npm run dev), po zmianie kodu, nie nastepuje od razu przeladowanie aplikacji lecz trzeba wpierw recznie przeladowac strone w przegladarce

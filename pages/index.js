@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import Layout from '../layouts/layout'
-import { getSeasons, getRaces } from '../lib/races'
+import { getSeasons, getRaces, getStats } from '../lib/races'
 import RaceItem from '../components/race-item'
 
 const currentYear = new Date().getFullYear().toString()
 
-export default function IndexPage({ racesData, seasons }) {
+export default function IndexPage({ racesData, seasons, stats }) {
   return (
-    <Layout seasons={seasons} activeSeason={currentYear}>
+    <Layout seasons={seasons} activeSeason={currentYear} stats={stats}>
       <Head>
         <title>Races</title>
       </Head>
@@ -37,10 +37,12 @@ export default function IndexPage({ racesData, seasons }) {
 export async function getStaticProps() {
   const racesData = await getRaces(currentYear)
   const seasons = await getSeasons()
+  const stats = await getStats()
   return {
     props: {
       racesData,
-      seasons
+      seasons,
+      stats,
     },
     revalidate: 60,
   }
