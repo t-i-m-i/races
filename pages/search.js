@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Layout from '../layouts/layout-search'
 import { getRaces } from '../lib/races'
 import RaceItem from '../components/race-item'
@@ -29,7 +30,20 @@ export default function SearchPage({ racesData }) {
           autoCapitalize="off"
           spellCheck="false"
           onInput={search}
+          autoFocus
         />
+        <span className="close">
+          <Link href="/">
+            <svg
+              className="ico-close"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <use xlinkHref="/img/sprite.svg#close"></use>
+            </svg>
+          </Link>
+        </span>
       </div>
 
       {/* todo: make component */}
@@ -73,6 +87,19 @@ export default function SearchPage({ racesData }) {
         input:focus {
           border-color: rgba(255, 255, 255, 0.5);
           outline: none;
+        }
+        .close {
+          display: flex;
+          align-items: center;
+          margin-left: 12px;
+        }
+        .ico-close {
+          fill: rgba(255, 255, 255, 0.2);
+          cursor: pointer;
+          transition: fill 400ms;
+        }
+        .ico-close:hover {
+          fill: rgba(255, 255, 255, 0.5);
         }
       `}</style>
     </Layout>

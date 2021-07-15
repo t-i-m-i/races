@@ -13,7 +13,7 @@ export default function Races({ racesData, seasons, stats }) {
       <Head>
         <title>Races season {season}</title>
       </Head>
-      {/* todo: make component */}
+      {/* todo: make component - table repeats in 3 places */}
       <div className="g--table-container">
         <table className="table">
           <thead>
@@ -36,6 +36,9 @@ export default function Races({ racesData, seasons, stats }) {
   )
 }
 
+/*
+ * Pre-render paths only at build time
+ */
 export async function getStaticPaths() {
   const paths = await getSeasonsPaths()
   return {
@@ -43,6 +46,10 @@ export async function getStaticPaths() {
     fallback: false,
   }
 }
+
+/*
+ * todo: Render paths at run time?
+ */
 
 export async function getStaticProps({ params }) {
   const racesData = await getRaces(params.season)
