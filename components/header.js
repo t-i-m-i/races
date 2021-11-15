@@ -28,6 +28,7 @@ export default function Header({ stats }) {
               <li>Marathon+: {stats.marathonPlus}</li>
               <li>Marathon-: {stats.marathonMinus}</li>
               <li>Bike: {stats.bike}</li>
+              <li>Swim: {stats.swim}</li>
               <li>Total: {total(stats)}</li>
             </ul>
           </div>
