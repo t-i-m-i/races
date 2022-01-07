@@ -9,7 +9,7 @@ export default function Layout({ children, seasons, activeSeason, stats }) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="robots" content="noindex" />
         <link
-          href="http://fonts.googleapis.com/css?family=Lato:400,400italic,900&amp;subset=latin,latin-ext"
+          href="https://fonts.googleapis.com/css?family=Lato:400,400italic,900&amp;subset=latin,latin-ext"
           rel="stylesheet"
         ></link>
       </Head>
