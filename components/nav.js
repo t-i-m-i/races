@@ -26,7 +26,12 @@ export default function Nav({ seasons, activeSeason }) {
         ))}
         <li className={styles.tabs__item}>
           <Link href="/search">
-            <a className={styles['link']}>Search</a>
+            <a className={styles.link}>Search</a>
+          </Link>
+        </li>
+        <li className={styles.tabs__item}>
+          <Link href="/personal-bests">
+            <a className={styles[isActiveTab('personal-bests')]}>PBs</a>
           </Link>
         </li>
       </ul>
