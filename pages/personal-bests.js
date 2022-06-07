@@ -93,14 +93,14 @@ export default function PersonalBestsPage({ seasons, stats }) {
                         <tr>
                             <td></td>
                             <td>bike</td>
-                            <td>29.70</td>
-                            <td>Kędzierzyn-Koźle 2019</td>
+                            <td>30.3</td>
+                            <td>Pszczyna 2022</td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>run</td>
-                            <td>5:15</td>
-                            <td>Głogów Małopolski 2021</td>
+                            <td>5:12</td>
+                            <td>Pszczyna i Osiek 2022</td>
                         </tr>
 
                         <tr>
