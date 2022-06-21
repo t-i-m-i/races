@@ -121,12 +121,6 @@ export default function PersonalBestsPage({ seasons, stats }) {
                             <td>4:55</td>
                             <td>Gliwicka Parkowa Prowokacja Biegowa 2015</td>
                         </tr>
-                        <tr>
-                            <td></td>
-                            <td>15k</td>
-                            <td>5:20</td>
-                            <td>Cross Wiosenny Rybnik 2015</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
