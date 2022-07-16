@@ -43,7 +43,7 @@ export async function getStaticPaths() {
   const paths = await getSeasonsPaths()
   return {
     paths,
-    fallback: false,
+    fallback: true,
   }
 }
 
