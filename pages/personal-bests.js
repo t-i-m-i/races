@@ -93,8 +93,8 @@ export default function PersonalBestsPage({ seasons, stats }) {
                         <tr>
                             <td></td>
                             <td>bike</td>
-                            <td><strong className="inverted">31.6</strong></td>
-                            <td>Głogów Małopolski 2022</td>
+                            <td><strong className="inverted">31.7</strong></td>
+                            <td>Uniejów 2022</td>
                         </tr>
                         <tr>
                             <td></td>
