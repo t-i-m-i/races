@@ -105,20 +105,20 @@ export default function PersonalBestsPage({ seasons, stats }) {
 
                         <tr>
                             <td><strong>Run</strong></td>
-                            <td>3k</td>
-                            <td>(brak)</td>
-                            <td></td>
+                            <td>3000m</td>
+                            <td><strong className="inverted">4:39</strong> (time: 13:58)</td>
+                            <td>Pogoń Ruda Śląska 2023</td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>5k</td>
-                            <td><strong className="inverted">4:40</strong></td>
+                            <td><strong className="inverted">4:40</strong> (time: 23:20)</td>
                             <td>Leśnicka Piątka 2018</td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>10k</td>
-                            <td>4:55</td>
+                            <td>4:55 (time: 49:20)</td>
                             <td>Gliwicka Parkowa Prowokacja Biegowa 2015</td>
                         </tr>
                     </tbody>
