@@ -8,3 +8,5 @@
 
 ## getStaticProps()
 - ```revalidate: 60,``` powoduje, ze na localu (npm run dev), po zmianie kodu, nie nastepuje od razu przeladowanie aplikacji lecz trzeba wpierw recznie przeladowac strone w przegladarce
+
+## counter 1
