@@ -42,33 +42,33 @@ export default function PersonalBestsPage({ seasons, stats }) {
                         <tr>
                             <td></td>
                             <td>run</td>
-                            <td><strong className="inverted">5:11</strong></td>
+                            <td>5:11</td>
                             <td>Iron Dragon 2019</td>
                         </tr>
                         
                         <tr>
                             <td><strong>Sprint Triathlon</strong></td>
                             <td>swim</td>
-                            <td>2:27</td>
-                            <td>Radłów 2021</td>
+                            <td><strong className="inverted">2:18</strong></td>
+                            <td>Triathlon Sokoła 2023</td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>bike</td>
-                            <td>31.00</td>
-                            <td>Radłów 2021</td>
+                            <td>31.20</td>
+                            <td>MP AG Rzeszów 2023</td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>run</td>
-                            <td>5:16</td>
-                            <td>Frydman 2021</td>
+                            <td><strong className="inverted">5:00</strong></td>
+                            <td>Frydman 2023</td>
                         </tr>
 
                         <tr>
                             <td><strong>1/4 IM</strong></td>
                             <td>swim</td>
-                            <td><strong className="inverted">2:25</strong></td>
+                            <td>2:25</td>
                             <td>Stryków 2018</td>
                         </tr>
                         <tr>
