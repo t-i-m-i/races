@@ -87,8 +87,8 @@ export default function PersonalBestsPage({ seasons, stats }) {
                         <tr>
                             <td><strong>1/8 IM</strong></td>
                             <td>swim</td>
-                            <td>2:30</td>
-                            <td>Kędzierzyn-Koźle 2019</td>
+                            <td>2:17</td>
+                            <td>Chotowa 2023</td>
                         </tr>
                         <tr>
                             <td></td>
@@ -99,8 +99,8 @@ export default function PersonalBestsPage({ seasons, stats }) {
                         <tr>
                             <td></td>
                             <td>run</td>
-                            <td>5:12</td>
-                            <td>Pszczyna i Osiek 2022</td>
+                            <td>5:01</td>
+                            <td>Syców 2023</td>
                         </tr>
 
                         <tr>
