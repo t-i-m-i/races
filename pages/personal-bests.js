@@ -49,7 +49,7 @@ export default function PersonalBestsPage({ seasons, stats }) {
                         <tr>
                             <td><strong>Sprint Triathlon</strong></td>
                             <td>swim</td>
-                            <td><strong className="inverted">2:18</strong></td>
+                            <td>2:18</td>
                             <td>Triathlon Sokoła 2023</td>
                         </tr>
                         <tr>
@@ -87,8 +87,8 @@ export default function PersonalBestsPage({ seasons, stats }) {
                         <tr>
                             <td><strong>1/8 IM</strong></td>
                             <td>swim</td>
-                            <td>2:17</td>
-                            <td>Chotowa 2023</td>
+                            <td><strong className="inverted">~2:05</strong></td>
+                            <td>Triathlon Głogowski 2023</td>
                         </tr>
                         <tr>
                             <td></td>
