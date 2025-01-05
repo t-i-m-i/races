@@ -31,7 +31,7 @@ export default function IndexPage({ racesData, seasons, stats }) {
           </tbody>
           <tfoot>
             <tr className="table__subheading">
-              <td colspan="5">Total: {total}</td>
+              <td colSpan="5">Total: {total}</td>
             </tr>
           </tfoot>
         </table>
