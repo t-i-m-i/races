@@ -7,7 +7,8 @@ import RaceItem from '../components/race-item'
 export default function Races({ racesData, seasons, stats }) {
   const router = useRouter()
   const { season } = router.query
-
+  const total = Object.keys(racesData).length;
+  
   return (
     <Layout seasons={seasons} activeSeason={season} stats={stats}>
       <Head>
@@ -30,6 +31,11 @@ export default function Races({ racesData, seasons, stats }) {
               <RaceItem key={idx} race={race} />
             ))}
           </tbody>
+          <tfoot>
+            <tr className="table__subheading">
+              <td colspan="5">Total: {total}</td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </Layout>

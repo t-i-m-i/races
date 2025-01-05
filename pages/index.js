@@ -6,6 +6,7 @@ import RaceItem from '../components/race-item'
 const currentYear = new Date().getFullYear().toString()
 
 export default function IndexPage({ racesData, seasons, stats }) {
+  const total = Object.keys(racesData).length;
   return (
     <Layout seasons={seasons} activeSeason={currentYear} stats={stats}>
       <Head>
@@ -28,6 +29,11 @@ export default function IndexPage({ racesData, seasons, stats }) {
               <RaceItem key={idx} race={race} />
             ))}
           </tbody>
+          <tfoot>
+            <tr className="table__subheading">
+              <td colspan="5">Total: {total}</td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </Layout>
